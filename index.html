@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="all">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jay DW</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+        scroll-behavior: smooth !important;
+      }
+      @font-face {
+        font-family: starfnt;
+        src: url(assets/StarDream.ttf);
+      }
+      @font-face {
+        font-family: starpgh;
+        src: url(assets/Ubahin.otf);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 100vw 100vw 100vw 100vw;
+        grid-template-rows: 90px 90px 90px 90px 90px;
+        background-color: ;
+        width: 400vw;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .child {
+        border-bottom-style: solid;
+        border-width: 5px;
+        border-color: rgb(170, 129, 129);
+      }
+      .all {
+        background-image: url("assets/bgteststars2.png");
+        background-repeat: repeat-x;
+      }
+      .notebutton {
+        background-image: url("assets/wholenotebutton.png");
+        background-repeat: no-repeat;
+        background-size: auto 90px;
+      }
+      .compbutton {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+        width: 110px;
+        position: relative;
+        top: -10px;
+        cursor: pointer;
+      }
+      .scorebutton {
+        margin-left: 90px;
+      }
+      .imagehov:hover {
+        opacity: 0.8;
+      }
+      .contact-inputs {
+        border: none !important;
+        -webkit-appearance: none !important;
+        -ms-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        outline: none !important;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 20vw;
+        height: 30px;
+        background-color: rgb(238, 238, 201);
+        border-radius: 10px;
+      }
+      .larger-box {
+        margin-top: 10px;
+        height: 59px;
+        width: 40vw;
+      }
+      .subbut {
+        border: none;
+        margin-top: 35px;
+        margin-left: 30px;
+        background-color: rgb(239, 236, 167);
+        border-radius: 50px;
+      }
+      .contents {
+        margin-top: 10vh;
+      }
+      h1 {
+        margin-left: 10px;
+      }
+      .mainh {
+        margin-left: 0px;
+      }
+      .popover {
+        border-color: rgb(102, 54, 52);
+        border-radius: 20px !important;
+        border-width: 10px;
+        background-image: url("assets/bgtest5.png");
+        background-position: bottom;
+        background-size: 350% auto;
+        width: 430px;
+      }
+      .p-score {
+        width: 935px;
+      }
+      .p-yt {
+        width: 1105px;
+      }
+      .popbut {
+        border-radius: 50px;
+        background-color: rgb(40, 28, 61);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(27, 18, 43);
+        margin-left: 10px;
+        padding-botton: 5px;
+        font-family: starpgh;
+        cursor: pointer;
+      }
+      .scores {
+        display: flex;
+      }
+      .musicdesc {
+        margin-left: 15px;
+        font-family: starpgh;
+        color: rgb(27, 18, 43);
+      }
+      .abouttxt {
+        font-family: starpgh;
+        color: rgb(224, 220, 143);
+        margin-top: 3vh;
+        font-size: 20px;
+        padding-left: 8px;
+      }
+      h1 {
+        text-decoration-line: none;
+        font-family: starfnt;
+        color: rgb(239, 236, 167);
+        font-size: 60px;
+        position: relative;
+        bottom: 35px;
+        text-stroke-width: 10px;
+        text-stroke-color: rgb(224, 220, 143);
+        text-stroke-color: black;
+      }
+      .ntbttntxt {
+        font-family: starpgh;
+      }
+      .ntbttntxt:link {
+        color: rgb(153, 148, 56);
+      }
+      .ntbttntxt:visited {
+        color: rgb(153, 148, 56);
+      }
+      .ntbttntxt:hover {
+        color: rgb(200, 200, 100);
+      }
+      .ntbttntxt:active {
+        color: white;
+      }
+      .here:link {
+        color: rgb(17, 17, 107);
+      }
+      .here:visited {
+        color: rgb(35, 12, 79);
+      }
+    </style>
+  </head>
+  <div class="contents" id="out" style="display: flex">
+    <div>
+      <img
+        src="assets/starbassclef2.png"
+        alt="basscleff"
+        width="auto"
+        height="365px"
+        style="
+          margin-top: 85px;
+          margin-right: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+        "
+      />
+    </div>
+    <main class="grid" style="margin-left: 0px; padding-left: 0px">
+      <nav id="home" class="child">
+        <div><h1 class="mainh">Jay DW</h1></div>
+      </nav>
+      <div id="about" class="child"><h1>About Me</h1></div>
+      <div id="compositions" class="child"><h1>Compositions</h1></div>
+      <div id="email" class="child"><h1>Email Me</h1></div>
+      <div class="child"></div>
+      <div class="child abouttxt">
+        Jay is a composer, pianist, euphonium player, & bass guitar player from
+        Atlanta GA with a degree from University of Miami’s media
+      </div>
+      <div class="child" style="display: flex">
+        <button popovertarget="hatched" class="compbutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--comp1--></button
+        ><button popovertarget="pirate" class="compbutton scorebutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--score1-->
+        </button>
+      </div>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="contact-form"
+        class="child"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="cecae8ce-133f-4dc9-b292-5a2f65d6f907"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="  Your Name"
+          class="contact-inputs"
+          required
+        />
+      </form>
+      <div
+        class="child notebutton"
+        style="padding-top: 35px; padding-left: 9px"
+      >
+        <a href="#email" class="ntbttntxt">Email Me</a>
+      </div>
+      <div class="child abouttxt">
+        scoring program, along with minors in composition & interactive media,
+        giving them experience in both music & game engines
+      </div>
+      <div class="child" style="display: flex; padding-left: 90px">
+        <button popovertarget="binary" class="compbutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--comp 2--></button
+        ><button popovertarget="whenyou" class="compbutton scorebutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--score2-->
+        </button>
+      </div>
+      <div class="child">
+        <input
+          type="email"
+          name="email"
+          placeholder="  Your Email"
+          class="contact-inputs"
+          required
+          form="contact-form"
+        />
+      </div>
+      <div
+        class="child notebutton"
+        style="padding-top: 35px; padding-left: 0px"
+      >
+        <a
+          href="#compositions"
+          class="ntbttntxt"
+          style="position: relative; right: 14px"
+          >Compositions</a
+        >
+      </div>
+      <div class="child abouttxt">
+        (specifically Unity & Game Maker studio). Their music is inspired from a
+        wide range of sources, from chiptune, to latin jazz, to
+      </div>
+      <div class="child" style="display: flex; padding-left: 180px">
+        <!-- <button popovertarget="binary">comp 3</button> -->
+        <button popovertarget="post2" class="compbutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--comp 3-->
+        </button>
+        <button popovertarget="grandand" class="compbutton scorebutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--score3-->
+        </button>
+      </div>
+      <div class="child">
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs larger-box"
+          required
+          form="contact-form"
+        >
+        </textarea>
+      </div>
+      <div
+        class="child notebutton"
+        style="padding-top: 35px; padding-left: 5px"
+      >
+        <a href="#about" class="ntbttntxt">About Me</a>
+      </div>
+      <div class="child abouttxt">
+        prog rock, to classical piano. Combining disparate ideas to create
+        unique aesthetics is a common part of their musical work.
+      </div>
+      <div class="child" style="display: flex; padding-left: 270px">
+        <button popovertarget="biota" class="compbutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--comp 4--></button
+        ><button popovertarget="Government" class="compbutton scorebutton">
+          <img
+            src="assets/wholenotebutton.png"
+            width="auto"
+            height="90"
+            alt=""
+            class="imagehov"
+          /><!--score4-->
+        </button>
+      </div>
+      <div class="child">
+        <button type="submit" form="contact-form" class="subbut">Submit</button>
+      </div>
+    </main>
+  </div>
+  <!--div class="popover"-->
+  <div popover id="hatched" class="popover">
+    <iframe
+      style="margin-left: 15px"
+      width="400px"
+      height="166"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2100944199&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    ></iframe>
+    <p width="400px" class="musicdesc">
+      A track inspired by Strangehouse's art. I wanted a battle theme that
+      encompased both the horror of the depicted monster, and the hype of a fun
+      fast paced boss rush.
+    </p>
+    <button popovertarget="hatched" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <!--/div-->
+  <div popover id="pirate" class="popover p-score">
+    <div class="scores">
+      <div>
+        <iframe
+          style="margin-left: 15px"
+          width="400px"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1835539239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <p class="musicdesc" style="width: 400px">
+          A re-score of a scene from the One Piece live action adaptation. I was
+          able to record some live strings for this, which means I needed to
+          prepare parts to hand out. Those parts can be found to the right.
+        </p>
+      </div>
+      <embed
+        src="assets/String Parts.pdf"
+        width="500px"
+        height="375"
+        type="application/pdf"
+        style="margin-left: 15px"
+      />
+    </div>
+
+    <button popovertarget="pirate" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <div popover id="binary" class="popover">
+    <iframe
+      style="margin-left: 15px"
+      width="400px"
+      height="166"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1822013811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    ></iframe>
+    <p width="400px" class="musicdesc">
+      A commision for an interactive learning game created to be an intro to
+      reading binary. A link to the game can be found
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://vsueiro.com/binary-birthday/"
+        class="here"
+        >here.</a
+      >
+    </p>
+    <button popovertarget="binary" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <div popover id="post2" class="popover">
+    <iframe
+      style="margin-left: 15px"
+      width="400px"
+      height="166"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2215097522&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    ></iframe>
+    <p width="400px" class="musicdesc">
+      An experiment with mixing prog rock instrumentation and production with
+      some of the rhythms and harmony of latin jazz, along with some chiptune
+      sprinkled in.
+    </p>
+    <button popovertarget="post2" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <div popover id="grandand" class="popover p-score">
+    <div class="scores">
+      <div>
+        <iframe
+          style="margin-left: 15px"
+          width="400px"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2226441761&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <p class="musicdesc" style="width: 400px">
+          A rescore of an old Sony commercial, and one of my first media scoring
+          projects from back in school, retouched to match my current skill
+          level.
+        </p>
+      </div>
+      <embed
+        src="assets/Grand & Chaotic Score.pdf"
+        width="500"
+        height="375"
+        type="application/pdf"
+        style="margin-left: 15px"
+      />
+    </div>
+    <button popovertarget="grandand" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <div popover id="Government" class="popover p-score">
+    <div class="scores">
+      <div>
+        <iframe
+          style="margin-left: 15px"
+          width="400px"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2226440201&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <p class="musicdesc" style="width: 400px">
+          A re-score of a TV show intro, going for a mix of unese, mystery, and
+          U.S. patriotism.
+        </p>
+      </div>
+      <embed
+        src="assets/Government Secrets Score.pdf"
+        width="500"
+        height="375"
+        type="application/pdf"
+        style="margin-left: 15px"
+      />
+    </div>
+    <button
+      popovertarget="Government"
+      popovertargetaction="hide"
+      class="popbut"
+    >
+      close
+    </button>
+  </div>
+  <div popover id="biota" class="popover">
+    <iframe
+      style="margin-left: 15px"
+      width="400px"
+      height="166"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2100674358&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    ></iframe>
+    <p width="400px" class="musicdesc">
+      A track for the game Biota, a game jam project from the P1 game jam
+      discord. The game was never fully finished, but it was intended to be a
+      exploratory game about cleaning the ocean floor, and searching an ancient
+      flooded dungeon like temple. This was to be the temple theme. Being
+      intended to implement in a game, the track was made to loop perfectly
+      (aside from the slight stutter of SoundCloud's looping feature).
+    </p>
+    <button popovertarget="biota" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <div popover id="whenyou" class="popover p-yt">
+    <div class="scores">
+      <div>
+        <iframe
+          style="margin-left: 15px"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/epN_fG7ZfQk?si=0ssJPqpLY38Zwk3D"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p class="musicdesc" style="width: 560px">
+          An arrangement of Emma Harner's "When You mean It". As a big fan of
+          her work I wanted to take it and break it apart, see what made it
+          work, and see if i could piece it back together as a tune for piano
+          and bass while still keeping the core of what makes the original so
+          captivating to me.
+        </p>
+      </div>
+      <embed
+        src="assets/When You Mean It.pdf"
+        width="500"
+        height="375"
+        type="application/pdf"
+        style="margin-left: 15px"
+      />
+    </div>
+    <button popovertarget="whenyou" popovertargetaction="hide" class="popbut">
+      close
+    </button>
+  </div>
+  <!-- What We Left Behind Colored -->
+  <!-- Emptied -->
+  <!-- plunderphonics -->
+  <!-- score for sony balls -->
+  <!-- House of Cards "political intrigue"-->
+  <!-- Enablex "spa day"-->
+  <!-- Pirates -->
+</html>
