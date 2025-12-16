@@ -109,10 +109,13 @@
         background-position: bottom;
         background-size: 350% auto;
         width: 430px;
-        justify-self: anchor-center;
-        position: sticky;
-  top: 0;
-        left: 0;
+      }
+      @media screen and (max-width: 1408px) {
+        .popover {
+          position: relative;
+          left: calc(100vw+1500px);
+      }
+      @media screen and (max-width: 900px) {
       }
       .p-score {
         width: 935px;
