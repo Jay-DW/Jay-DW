@@ -27,6 +27,11 @@
         padding-left: 15px;
         padding-right: 15px;
       }
+    @media screen and (max-width: 1408px) {
+      .grid {
+        grid-template-columns: 100vw 1500px 1408px 100vw;
+      }
+    }
       .child {
         border-bottom-style: solid;
         border-width: 5px;
@@ -147,6 +152,7 @@
       .ntbttntxt {
         font-family: starpgh;
         background: rgba(204, 199, 108, 0.3);
+        border-radius: 5px;
       }
       .ntbttntxt:link {
         color: rgb(253, 253, 245);
@@ -186,7 +192,7 @@
         position: relative;
         font-family: starpgh;
         color: white;
-        top: -32.5px;
+        top: -31.5px;
         background: rgba(204, 199, 108, 1);
         border-radius: 10px;
         width: 150px;
